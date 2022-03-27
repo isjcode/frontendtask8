@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Cantarell", sans-serif;
+}
+
+.first {
+    width: 68%;
+    height: 650px;
+    padding: 0 16% 0 16%;
+    background-color: #212529;
+    display: flex;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+}
+
+header .left,
+header .right {
+    width: 50%;
+    white-space: nowrap;
+}
+
+.logo {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 17px;
+    filter: brightness(60%);
+}
+
+.first .right i {
+    color: white;
+    filter: brightness(60%);
+    opacity: 1;
+}
+
+.first .right {
+    text-align: right;
+}
+
+.phone-header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    align-items: center;
+    display: none;
+
+}
+
+.phone-header .left,
+.phone-header .right {
+    width: 47%;
+    white-space: nowrap;
+}
+
+.first .text {
+    width: 30%;
+    height: 300px;
+    position: absolute;
+    top: 15%;
+}
+
+.first .text h1 {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+
+.first .text p {
+    color: white;
+    margin-top: 20px;
+    filter: brightness(60%);
+}
+
+.first .text a {
+    display: inline-block;
+    background-color: rgb(80, 80, 221);
+    text-decoration: none;
+    color: white;
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 40px;
+    border-radius: 6px;
+}
+
+
+@media (max-width: 600px) {
+    .first .text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    header {
+        display: none;
+    }
+    .second .left {
+        width: 100% !important;
+        text-align: center;
+        margin: 0 !important;
+    }
+
+
+    .second .right {
+        width: 100% !important;
+    }
+
+    .box {
+        width: 100% !important;
+    }
+    .second {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .phone-header {
+        display: flex;
+    }
+
+    .first .text {
+        width: 70%;
+        margin-top: 50px;
+    }
+
+    .first {
+        text-align: center;
+    }
+}
+
+.second {
+    width: 68%;
+    height: 400px;
+    padding: 0 16% 0 16%;
+    display: flex;
+}
+
+.second .left {
+    width: 35%;
+    margin-right: 200px;
+}
+
+.second .right {
+    width: 65%;
+}
+
+.second .left h1 {
+    font-size: 35px;
+    margin-top: 100px;
+}
+
+.second .right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 40%;
+    height: 50%;
+}
+
+.box i {
+    color:rgb(80, 80, 221);
+    font-size: 30px;
+    margin-top: 110px;
+    margin-bottom: 20px;
+}
+
+.p1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
